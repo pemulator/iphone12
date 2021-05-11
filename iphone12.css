@@ -1,18 +1,131 @@
 .clock {
-  font-size: 55px;
+  font-size: 70px;
   position: absolute;
-  top: 270px;
+  top: 80px;
 }
-
 .date {
   font-size: 20px;
   position: absolute;
-  top: 310px;
+  top: 125px;
+}
+.click {
+  position: absolute;
+  margin-top: 710px;
 }
 
 .open {
   border-radius: 10px;
   border: 3px solid #fff;
-  margin-top: 755px;
-  width: 100px;
+  margin-top: 735px;
+  width: 125px;
+}
+
+iframe {
+  position: absolute;
+  top: 11.1%;
+  left: 40.5%;
+}
+
+/*** APPS ***/
+/** MAIN APPS **/
+.app1 {
+  margin-top: 45px;
+  margin-left: 15px;
+}
+.app1-text {
+  font-family: "SFDisplay Light";
+  color: #fff;
+  font-size: 15px;
+  position: relative;
+  bottom: 65px;
+  left: 16px;
+}
+
+.app2 {
+  border-radius: 15px;
+  background: #fff;
+  width: 65px;
+  height: 65px;
+  margin-left: 100px;
+  position: relative;
+  bottom: 69px;
+}
+.app2-text {
+  font-family: "SFDisplay Light";
+  color: #fff;
+  font-size: 15px;
+  position: relative;
+  bottom: 65px;
+  left: 38px;
+}
+.app2-date {
+  color: #FF2828;
+  font-family: "SFDisplay Light";
+  font-size: 12px;
+  top: 9px;
+  position: relative;
+  font-weight: bolder;
+  letter-spacing: 1px;
+}
+.app2-no {
+  color: #1F1F1F;
+  font-family: "SFDisplay Light";
+  font-size: 35px;
+  bottom: 13px;
+  position: relative;
+}
+a:link {
+  text-decoration: none;
+}
+
+/** INSIDE APPS **/
+.in-appbg {
+  background: url("https://cdn.glitch.com/36a0a6ba-3023-4419-b7c2-f31390a098f8%2Fappbg-white.png");
+  background-repeat: no-repeat;
+  background-size: 362px 782px;
+}
+.not-available {
+  font-size: 30px;
+}
+.na-back {
+  font-size: 25px;
+}
+.na-back a:hover {
+  color: #FF2828;
+}
+.na-back a:visited {
+  color: #FF2828;
+}
+
+/*** ANIMATIONS ***/
+/** CLASSES **/
+.text-focus-in {
+	-webkit-animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+	        animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+}
+
+/** WEBKITS **/
+@-webkit-keyframes text-focus-in {
+  0% {
+    -webkit-filter: blur(12px);
+            filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+    opacity: 1;
+  }
+}
+@keyframes text-focus-in {
+  0% {
+    -webkit-filter: blur(12px);
+            filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+    opacity: 1;
+  }
 }
