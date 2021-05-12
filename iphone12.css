@@ -1,3 +1,7 @@
+a:link {
+  text-decoration: none;
+}
+
 .clock {
   font-size: 70px;
   position: absolute;
@@ -19,14 +23,42 @@
   margin-top: 735px;
   width: 125px;
 }
+.back {
+  border-radius: 10px;
+  border: 3px solid #000;
+  margin-top: 735px;
+  width: 125px;
+  position: relative;
+  top: 25px;
+}
 
 iframe {
   position: absolute;
   top: 11.1%;
   left: 40.5%;
+  flex-grow: 1;
+  padding: 0;
+  resize: none;
 }
 
 /*** APPS ***/
+/** GALLERY **/
+.app-gallery {
+  width: 90%;
+  background: rgb(255, 255, 255, 0.5);
+  border-radius: 25px;
+  margin: auto;
+  position: relative;
+  top: 410px;
+  height: 95px;
+}
+
+.g-app1 {
+  top: 15px;
+  left: 15px;
+  position: relative;
+}
+
 /** MAIN APPS **/
 .app1 {
   margin-top: 45px;
@@ -37,8 +69,8 @@ iframe {
   color: #fff;
   font-size: 15px;
   position: relative;
-  bottom: 65px;
-  left: 16px;
+  bottom: 120px;
+  right: 52px;
 }
 
 .app2 {
@@ -55,8 +87,8 @@ iframe {
   color: #fff;
   font-size: 15px;
   position: relative;
-  bottom: 65px;
-  left: 38px;
+  bottom: 120px;
+  right: 31px;
 }
 .app2-date {
   color: #FF2828;
@@ -74,8 +106,18 @@ iframe {
   bottom: 13px;
   position: relative;
 }
-a:link {
-  text-decoration: none;
+
+.app3 {
+  position: relative;
+  bottom: 134px;
+  left: 185px;
+}
+.app3-text {
+  color: #fff;
+  font-family: "SFDisplay Light";
+  font-size: 15px;
+  position: relative;
+  bottom: 120px;
 }
 
 /** INSIDE APPS **/
@@ -84,6 +126,13 @@ a:link {
   background-repeat: no-repeat;
   background-size: 362px 782px;
 }
+
+.in-notesapp-bg {
+  background: url("https://cdn.glitch.com/36a0a6ba-3023-4419-b7c2-f31390a098f8%2Fnotebg-white.png");
+  background-repeat: no-repeat;
+  background-size: 362px 782px;
+}
+
 .not-available {
   font-size: 30px;
 }
@@ -95,6 +144,18 @@ a:link {
 }
 .na-back a:visited {
   color: #FF2828;
+}
+/* NOTES APP */
+.notes-bottom {
+  background: #fff;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  border-radius: 0px 0px 45px 45px;
+}
+.notes-count {
+  text-align: center;
 }
 
 /*** ANIMATIONS ***/
