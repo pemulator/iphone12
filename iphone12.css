@@ -1,3 +1,12 @@
+.unsel {
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-user-drag: none;
+  user-drag: none;
+}
+
 a:link {
   text-decoration: none;
 }
@@ -22,6 +31,7 @@ a:link {
   border: 3px solid #fff;
   margin-top: 735px;
   width: 125px;
+  background: #fff;
 }
 .back {
   border-radius: 10px;
@@ -30,18 +40,31 @@ a:link {
   width: 125px;
   position: relative;
   top: 25px;
+  background: #000;
+}
+.back-white {
+  border-radius: 10px;
+  border: 3px solid #fff;
+  margin-top: 735px;
+  width: 125px;
+  position: relative;
+  top: 25px;
+  background: #fff;
 }
 
 iframe {
-  position: absolute;
-  top: 11.1%;
-  left: 40.5%;
-  flex-grow: 1;
-  padding: 0;
-  resize: none;
+  position: fixed;
+  top: 49.6%;
+  left: 49.9%;
+  transform: translate(-49.6%, -49.9%);
 }
 
 /*** APPS ***/
+.apps, .apps-text {
+  position: relative;
+  right: 1px;
+}
+
 /** GALLERY **/
 .app-gallery {
   width: 90%;
@@ -49,7 +72,7 @@ iframe {
   border-radius: 25px;
   margin: auto;
   position: relative;
-  top: 410px;
+  top: 387px;
   height: 95px;
 }
 
@@ -64,14 +87,6 @@ iframe {
   margin-top: 45px;
   margin-left: 15px;
 }
-.app1-text {
-  font-family: "SFDisplay Light";
-  color: #fff;
-  font-size: 15px;
-  position: relative;
-  bottom: 120px;
-  right: 52px;
-}
 
 .app2 {
   border-radius: 15px;
@@ -81,14 +96,6 @@ iframe {
   margin-left: 100px;
   position: relative;
   bottom: 69px;
-}
-.app2-text {
-  font-family: "SFDisplay Light";
-  color: #fff;
-  font-size: 15px;
-  position: relative;
-  bottom: 120px;
-  right: 31px;
 }
 .app2-date {
   color: #FF2828;
@@ -112,12 +119,78 @@ iframe {
   bottom: 134px;
   left: 185px;
 }
+
+.app4 {
+  position: relative;
+  bottom: 134px;
+  left: 201px;
+}
+
+.app5 {
+  position: relative;
+  bottom: 30px;
+  right: 123px;
+}
+
+.app6 {
+  position: relative;
+  bottom: 30px;
+  right: 107px;
+}
+
+/** TEXT **/
+.app1-text {
+  font-family: "SFDisplay Light";
+  color: #fff;
+  font-size: 15px;
+  position: relative;
+  bottom: 115px;
+  right: 258px;
+}
+
+.app2-text {
+  font-family: "SFDisplay Light";
+  color: #fff;
+  font-size: 15px;
+  position: relative;
+  bottom: 133px;
+  left: 104px;
+}
+
 .app3-text {
   color: #fff;
   font-family: "SFDisplay Light";
   font-size: 15px;
   position: relative;
-  bottom: 120px;
+  bottom: 134px;
+  left: 134px;
+}
+
+.app4-text {
+  color: #fff;
+  font-family: "SFDisplay Light";
+  font-size: 15px;
+  position: relative;
+  bottom: 134px;
+  left: 168px;
+}
+
+.app5-text {
+  color: #fff;
+  font-family: "SFDisplay Light";
+  font-size: 15px;
+  position: relative;
+  bottom: 30px;
+  right: 129px;
+}
+
+.app6-text {
+  color: #fff;
+  font-family: "SFDisplay Light";
+  font-size: 15px;
+  position: relative;
+  bottom: 30px;
+  right: 78px;
 }
 
 /** INSIDE APPS **/
@@ -133,18 +206,22 @@ iframe {
   background-size: 362px 782px;
 }
 
+.in-mailapp-bg {
+  background: url("https://cdn.glitch.com/36a0a6ba-3023-4419-b7c2-f31390a098f8%2Fmailbg.png?v=1620794901864");
+  background-repeat: no-repeat;
+  background-size: 362px 782px;
+}
+
+.in-clockapp-bg {
+  background: url("https://cdn.glitch.com/36a0a6ba-3023-4419-b7c2-f31390a098f8%2Fclockbg.png?v=1620799098761");
+  background-repeat: no-repeat;
+  background-size: 362px 782px;
+}
+
 .not-available {
   font-size: 30px;
 }
-.na-back {
-  font-size: 25px;
-}
-.na-back a:hover {
-  color: #FF2828;
-}
-.na-back a:visited {
-  color: #FF2828;
-}
+
 /* NOTES APP */
 .notes-bottom {
   background: #fff;
@@ -156,6 +233,139 @@ iframe {
 }
 .notes-count {
   text-align: center;
+}
+
+/* MAIL APP */
+.mailbox-title {
+  font-family: "SFDisplay Bold";
+  position: relative;
+  font-size: 35px;
+  top: 15px;
+  left: 15px;
+}
+.mailbox-list {
+  background-color: #FFF;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 85%;
+  border-radius: 0px 0px 45px 45px;
+}
+.mail-1 {
+  position: absolute;
+  left: 0;
+  border-top: 1px solid #F4F1F5;
+  border-bottom: 1px solid #F4F1F5;
+  width: 100%;
+  height: 13%;
+  background: #fff;
+}
+.mail-1:hover {
+  background: #CDCDCD;
+}
+
+.mailbox-back {
+  font-family: "SFDisplay Light";
+  position: relative;
+  font-size: 25px;
+  top: 15px;
+  left: 15px;
+}
+.mailbox-back a:link {
+  color: #1171C7;
+}
+.mailbox-back a:visited {
+  color: #1171C7;
+}
+.mailbox-back a:hover {
+  color: #0C4D87;
+}
+
+.mail-content {
+  margin: auto;
+  width: 90%;
+}
+
+.mail-author {
+  font-family: "SFDisplay Bold";
+  font-size: 20px;
+  position: relative;
+  top: 5px;
+  color: #000;
+}
+.mail-title {
+  font-family: "SFDisplay Light";
+  font-weight: bold;
+  font-size: 15px;
+  position: relative;
+  top: 3px;
+  color: #000;
+}
+.mail-preview {
+  font-family: "SFDisplay Light";
+  color: #A6A5A8;
+  position: relative;
+  top: 3px;
+}
+
+a:link .mail-author, a:link .mail-title {
+  color: #000;
+}
+a:visited .mail-author, a:visited .mail-title {
+  color: #000;
+}
+
+/* CLOCK APP */
+.wc-title {
+  text-align: center;
+  font-family: "SFDisplay Bold";
+  color: #fff;
+  position: relative;
+  top: 25px;
+  font-size: 20px;
+}
+.wc-clock-list {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 90%;
+}
+.wc-clock {
+  background: #171617;
+  border-top: 1px solid #212022;
+  border-bottom: 1px solid #212022;
+  width: 100%;
+  height: 100px;
+}
+.wc-clock-location {
+  font-family: "SFDisplay Light";
+  color: #fff;
+  font-size: 30px;
+  position: relative;
+  left: 15px;
+  top: 20px;
+}
+.wc-clock-difference {
+  font-family: "SFDisplay Light";
+  color: #808080;
+  position: relative;
+  left: 15px;
+  top: 20px;
+}
+.wc-clock-time {
+  font-family: "SFDisplay Light";
+  color: #fff;
+  position: relative;
+  left: 200px;
+  bottom: 35px;
+  font-size: 50px;
+}
+.wc-clock-period {
+  font-family: "SFDisplay Light";
+  color: #fff;
+  font-size: 30px;
 }
 
 /*** ANIMATIONS ***/
