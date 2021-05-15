@@ -1,3 +1,15 @@
+textarea {
+  border: none;
+  overflow: auto;
+  outline: none;
+
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+
+  resize: none;
+}
+
 .unsel {
   -moz-user-select: none;
   -webkit-user-select: none;
@@ -54,7 +66,7 @@ a:link {
 
 iframe {
   position: fixed;
-  top: 49.6%;
+  top: 49.7%;
   left: 49.9%;
   transform: translate(-49.6%, -49.9%);
 }
@@ -72,7 +84,7 @@ iframe {
   border-radius: 25px;
   margin: auto;
   position: relative;
-  top: 387px;
+  top: 300px;
   height: 95px;
 }
 
@@ -138,59 +150,161 @@ iframe {
   right: 107px;
 }
 
-/** TEXT **/
-.app1-text {
-  font-family: "SFDisplay Light";
-  color: #fff;
-  font-size: 15px;
+.app7 {
   position: relative;
-  bottom: 115px;
-  right: 258px;
+  bottom: 30px;
+  right: 91px;
 }
 
-.app2-text {
-  font-family: "SFDisplay Light";
+.app8 {
+  position: relative;
+  bottom: 99px;
+  left: 270px;
+}
+
+.app9 {
+  position: relative;
+  top: 8px;
+  right: 54px;
+}
+
+.app10 {
+  position: relative;
+  top: 9px;
+  right: 38px;
+}
+
+.app11 {
+  position: relative;
+  top: 9px;
+  right: 23px;
+}
+
+.app12 {
+  position: relative;
+  top: 9px;
+  right: 6px;
+}
+
+/** TEXT **/
+/* FACETIME */
+.app1-text {
+  font-family: "SFDisplay Regular";
   color: #fff;
   font-size: 15px;
   position: relative;
-  bottom: 133px;
+  bottom: 205px;
+  left: 17px;
+}
+
+/* CALENDAR */
+.app2-text {
+  font-family: "SFDisplay Regular";
+  color: #fff;
+  font-size: 15px;
+  position: relative;
+  bottom: 205px;
+  left: 40px;
+}
+
+/* PHOTOS */
+.app3-text {
+  color: #fff;
+  font-family: "SFDisplay Regular";
+  font-size: 15px;
+  position: relative;
+  bottom: 205px;
+  left: 70px;
+}
+
+/* CAMERA */
+.app4-text {
+  color: #fff;
+  font-family: "SFDisplay Regular";
+  font-size: 15px;
+  position: relative;
+  bottom: 205px;
   left: 104px;
 }
 
-.app3-text {
-  color: #fff;
-  font-family: "SFDisplay Light";
-  font-size: 15px;
-  position: relative;
-  bottom: 134px;
-  left: 134px;
-}
-
-.app4-text {
-  color: #fff;
-  font-family: "SFDisplay Light";
-  font-size: 15px;
-  position: relative;
-  bottom: 134px;
-  left: 168px;
-}
-
+/* MAIL */
 .app5-text {
   color: #fff;
-  font-family: "SFDisplay Light";
+  font-family: "SFDisplay Regular";
   font-size: 15px;
   position: relative;
-  bottom: 30px;
-  right: 129px;
+  bottom: 100px;
+  right: 191px;
 }
 
+/* CLOCK */
 .app6-text {
   color: #fff;
-  font-family: "SFDisplay Light";
+  font-family: "SFDisplay Regular";
   font-size: 15px;
   position: relative;
-  bottom: 30px;
-  right: 78px;
+  bottom: 100px;
+  right: 142px;
+}
+
+/* MAPS */
+.app7-text {
+  color: #fff;
+  font-family: "SFDisplay Regular";
+  font-size: 15px;
+  position: relative;
+  bottom: 100px;
+  right: 97px;
+}
+
+/* WEATHER */
+.app8-text {
+  color: #fff;
+  font-family: "SFDisplay Regular";
+  font-size: 15px;
+  position: relative;
+  bottom: 118px;
+  left: 275px;
+}
+
+/* REMINDERS */
+.app9-text {
+  color: #fff;
+  font-family: "SFDisplay Regular";
+  font-size: 15px;
+  position: relative;
+  bottom: 10px;
+  right: 43px;
+}
+
+/* NOTES */
+.app10-text {
+  color: #fff;
+  font-family: "SFDisplay Regular";
+  font-size: 15px;
+  position: relative;
+  bottom: 10px;
+  right: 14px;
+}
+
+/* STOCKS */
+.app11-text {
+  color: #fff;
+  font-family: "SFDisplay Regular";
+  font-size: 15px;
+  position: relative;
+  bottom: 10px;
+  left: 25px;
+}
+
+/* BOOKS */
+.app12-text {
+  color: #fff;
+  font-family: "SFDisplay Regular";
+  font-size: 15px;
+  position: relative;
+  bottom: 10px;
+  left: 66px;
 }
 
 /** INSIDE APPS **/
@@ -233,6 +347,82 @@ iframe {
 }
 .notes-count {
   text-align: center;
+  font-family: "SFDisplay Regular";
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+.notes-title {
+  font-family: "SFDisplay Bold";
+  position: relative;
+  font-size: 35px;
+  top: 15px;
+  left: 15px;
+}
+
+.notes-write {
+  color: #F1D78C;
+  position: relative;
+  text-align: right;
+  right: 5px;
+  bottom: 68px;
+}
+
+.notes-list {
+  border-bottom: 1px solid #E5E5E5;
+  width: 90%;
+  margin: auto;
+  height: 50px;
+}
+.notes-list-title {
+  font-family: "SFDisplay Regular";
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  color: #000;
+}
+.notes-list-time {
+  font-family: "SFDisplay Regular";
+  color: #A3A3A3;
+}
+.notes-list-preview {
+  font-family: "SFDisplay Regular";
+  color: #B9B9B9;
+}
+
+.notes-back {
+  color: #DDB53B;
+  font-family: "SFDisplay Regular";
+  font-size: 25px;
+}
+.notes-back a:link {
+  color: #DDB53B;
+}
+.notes-back a:visited {
+  color: #DDB53B;
+}
+.notes-arrow {
+  font-size: 30px;
+}
+
+.notes-writing-title {
+  display: block;
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: "SFDisplay Bold";
+  font-size: 25px;
+  color: #000;
+  background-color: rgb(0, 0, 0, 0);
+}
+.notes-writing-content {
+  display: block;
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: "SFDIsplay Regular";
+  color: #000;
+  font-size: 20px;
+  height: 550px;
+  background-color: rgb(0, 0, 0, 0)
 }
 
 /* MAIL APP */
@@ -280,6 +470,10 @@ iframe {
 }
 .mailbox-back a:hover {
   color: #0C4D87;
+}
+
+.mailbox-arrow {
+  font-size: 30px;
 }
 
 .mail-content {
