@@ -71,13 +71,13 @@ iframe {
   transform: translate(-49.6%, -49.9%);
 }
 
-/*** APPS ***/
+/**** APPS ****/
 .apps, .apps-text {
   position: relative;
   right: 1px;
 }
 
-/** GALLERY **/
+/*** GALLERY ***/
 .app-gallery {
   width: 90%;
   background: rgb(255, 255, 255, 0.5);
@@ -93,8 +93,13 @@ iframe {
   left: 15px;
   position: relative;
 }
+.g-app2 {
+  top: 15px;
+  left: 25px;
+  position: relative;
+}
 
-/** MAIN APPS **/
+/*** MAIN APPS ***/
 .app1 {
   margin-top: 45px;
   margin-left: 15px;
@@ -186,8 +191,8 @@ iframe {
   right: 6px;
 }
 
-/** TEXT **/
-/* FACETIME */
+/*** TEXT ***/
+/** FACETIME **/
 .app1-text {
   font-family: "SFDisplay Regular";
   color: #fff;
@@ -197,7 +202,7 @@ iframe {
   left: 17px;
 }
 
-/* CALENDAR */
+/** CALENDAR **/
 .app2-text {
   font-family: "SFDisplay Regular";
   color: #fff;
@@ -207,7 +212,7 @@ iframe {
   left: 40px;
 }
 
-/* PHOTOS */
+/** PHOTOS **/
 .app3-text {
   color: #fff;
   font-family: "SFDisplay Regular";
@@ -217,7 +222,7 @@ iframe {
   left: 70px;
 }
 
-/* CAMERA */
+/** CAMERA **/
 .app4-text {
   color: #fff;
   font-family: "SFDisplay Regular";
@@ -227,7 +232,7 @@ iframe {
   left: 104px;
 }
 
-/* MAIL */
+/** MAIL **/
 .app5-text {
   color: #fff;
   font-family: "SFDisplay Regular";
@@ -237,7 +242,7 @@ iframe {
   right: 191px;
 }
 
-/* CLOCK */
+/** CLOCK **/
 .app6-text {
   color: #fff;
   font-family: "SFDisplay Regular";
@@ -247,7 +252,7 @@ iframe {
   right: 142px;
 }
 
-/* MAPS */
+/** MAPS **/
 .app7-text {
   color: #fff;
   font-family: "SFDisplay Regular";
@@ -257,7 +262,7 @@ iframe {
   right: 97px;
 }
 
-/* WEATHER */
+/** WEATHER **/
 .app8-text {
   color: #fff;
   font-family: "SFDisplay Regular";
@@ -267,17 +272,17 @@ iframe {
   left: 275px;
 }
 
-/* REMINDERS */
+/** REMINDERS **/
 .app9-text {
   color: #fff;
   font-family: "SFDisplay Regular";
   font-size: 15px;
   position: relative;
   bottom: 10px;
-  right: 43px;
+  right: 44px;
 }
 
-/* NOTES */
+/** NOTES **/
 .app10-text {
   color: #fff;
   font-family: "SFDisplay Regular";
@@ -287,7 +292,7 @@ iframe {
   right: 14px;
 }
 
-/* STOCKS */
+/** STOCKS **/
 .app11-text {
   color: #fff;
   font-family: "SFDisplay Regular";
@@ -297,7 +302,7 @@ iframe {
   left: 25px;
 }
 
-/* BOOKS */
+/** BOOKS **/
 .app12-text {
   color: #fff;
   font-family: "SFDisplay Regular";
@@ -307,7 +312,7 @@ iframe {
   left: 66px;
 }
 
-/** INSIDE APPS **/
+/*** INSIDE APPS ***/
 .in-appbg {
   background: url("https://cdn.glitch.com/36a0a6ba-3023-4419-b7c2-f31390a098f8%2Fappbg-white.png");
   background-repeat: no-repeat;
@@ -332,11 +337,17 @@ iframe {
   background-size: 362px 782px;
 }
 
+.in-safariapp-bg {
+  background: url("https://raw.githubusercontent.com/pemulator/iphone12/main/assets/safaribg.png");
+  background-repeat: no-repeat;
+  background-size: 362px 782px;
+}
+
 .not-available {
   font-size: 30px;
 }
 
-/* NOTES APP */
+/** NOTES APP **/
 .notes-bottom {
   background: #fff;
   position: fixed;
@@ -363,8 +374,8 @@ iframe {
   color: #F1D78C;
   position: relative;
   text-align: right;
-  right: 5px;
-  bottom: 68px;
+  right: 10px;
+  bottom: 73px;
 }
 
 .notes-list {
@@ -412,6 +423,7 @@ iframe {
   font-size: 25px;
   color: #000;
   background-color: rgb(0, 0, 0, 0);
+  caret-color: #DBB13D;
 }
 .notes-writing-content {
   display: block;
@@ -422,10 +434,11 @@ iframe {
   color: #000;
   font-size: 20px;
   height: 550px;
-  background-color: rgb(0, 0, 0, 0)
+  background-color: rgb(0, 0, 0, 0);
+  caret-color: #DBB13D;
 }
 
-/* MAIL APP */
+/** MAIL APP **/
 .mailbox-title {
   font-family: "SFDisplay Bold";
   position: relative;
@@ -510,7 +523,7 @@ a:visited .mail-author, a:visited .mail-title {
   color: #000;
 }
 
-/* CLOCK APP */
+/** CLOCK APP **/
 .wc-title {
   text-align: center;
   font-family: "SFDisplay Bold";
@@ -562,14 +575,138 @@ a:visited .mail-author, a:visited .mail-title {
   font-size: 30px;
 }
 
-/*** ANIMATIONS ***/
-/** CLASSES **/
+/** SAFARI APP **/
+.safari-search {
+  display: block;
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: "SFDisplay Regular";
+  text-align: center;
+  border-radius: 7px;
+  background: #E9E8EB;
+  height: 25px;
+}
+.safari-search-text {
+  font-size: 20px;
+  padding: 10px;
+  color: #000;
+}
+.safari-search-placeholder {
+  color: #8F9090;
+  font-size: 20px;
+  padding: 10px;
+}
+.safari-lock {
+  top: 1px;
+  position: relative;
+}
+
+.safari-webpage {
+  border-top: 1px solid #A9A9AC;
+}
+.safari-webpage1 {
+  background: #F2F2F6;
+  margin-top: 15px;
+  position: absolute;
+  left: 0;
+  border-radius: 0px 0px 45px 45px;
+  width: 100%;
+  height: 693px;
+}
+.safari-webpage2 {
+  background: #fff;
+  margin-top: 15px;
+  position: absolute;
+  left: 0;
+  border-radius: 0px 0px 45px 45px;
+  width: 100%;
+  height: 693px;
+}
+
+.safari-favorites-text {
+  font-family: "SFDisplay Regular";
+  font-weight: bold;
+  left: 20px;
+  top: 40px;
+  letter-spacing: 0.5px;
+  font-size: 25px;
+  position: relative;
+}
+.safari-favorites {
+  width: 88%;
+  margin: auto;
+  position: relative;
+  top: 55px;
+}
+.safari-favorites1 {
+  background: #F2F2F2;
+  height: 75px;
+  width: 75px;
+  border: 1px solid #E1E1E1;
+  border-radius: 10px;
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, .2);
+}
+.safari-favorites-icon1 {
+  position: relative;
+  top: 10px;
+  left: 15px;
+}
+.safari-favorites2 {
+  background: #FFFFFF;
+  height: 75px;
+  width: 75px;
+  border: 1px solid #E1E1E1;
+  border-radius: 10px;
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, .2);
+  position: relative;
+  bottom: 95px;
+  left: 95px;
+}
+.safari-favorites-icon2 {
+  position: relative;
+  left: 15px;
+  top: 23px;
+}
+
+/* APPLE.COM */
+.applecom-navbar {
+  background: rgba(0, 0, 0, 0.8);
+  position: fixed;
+  left: 0;
+  width: 100%;
+  color: #D6D6D6;
+  height: 40px;
+}
+.appcom-navbar-menu {
+  position: relative;
+  top: 11px;
+  left: 15px;
+}
+.appcom-navbar-appleicon {
+  position: relative;
+  bottom: 13px;
+}
+
+/* EN.M.WIKIPEDIA.ORG */
+.enmwikipediaorg-navbar {
+  background: #E9EAEE;
+  height: 50px;
+}
+.enmwikipediaorg-navbarmenu {
+  position: relative;
+  top: 13px;
+  left: 20px;
+}
+
+/**** ANIMATIONS ****/
+/*** CLASSES ***/
 .text-focus-in {
 	-webkit-animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
 	        animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
 }
 
-/** WEBKITS **/
+/*** WEBKITS ***/
 @-webkit-keyframes text-focus-in {
   0% {
     -webkit-filter: blur(12px);
