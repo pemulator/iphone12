@@ -1,3 +1,26 @@
+section {
+  display: none;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+:target {
+  display: block;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 2px;
+  width: 100%;
+}
+iframe {
+  position: fixed;
+  top: 49.7%;
+  left: 49.9%;
+  transform: translate(-49.7%, -49.9%);
+}
+
 textarea {
   border: none;
   overflow: auto;
@@ -46,12 +69,11 @@ a:link {
   background: #fff;
 }
 .back {
+  position: absolute;
+  bottom: 10px;
   border-radius: 10px;
   border: 3px solid #000;
-  margin-top: 735px;
   width: 125px;
-  position: relative;
-  top: 25px;
   background: #000;
 }
 .back-white {
@@ -62,13 +84,6 @@ a:link {
   position: relative;
   top: 25px;
   background: #fff;
-}
-
-iframe {
-  position: fixed;
-  top: 49.7%;
-  left: 49.9%;
-  transform: translate(-49.6%, -49.9%);
 }
 
 /**** APPS ****/
@@ -84,7 +99,7 @@ iframe {
   border-radius: 25px;
   margin: auto;
   position: relative;
-  top: 145px;
+  top: 155px;
   height: 95px;
 }
 
@@ -102,15 +117,16 @@ iframe {
 /*** MAIN APPS ***/
 .app1 {
   margin-top: 45px;
-  margin-left: 15px;
+  margin-left: 20px;
 }
 
 .app2 {
   border-radius: 15px;
+
   background: #fff;
   width: 65px;
   height: 65px;
-  margin-left: 100px;
+  margin-left: 105px;
   position: relative;
   bottom: 69px;
 }
@@ -134,182 +150,187 @@ iframe {
 .app3 {
   position: relative;
   bottom: 134px;
-  left: 185px;
+  left: 190px;
 }
 
 .app4 {
   position: relative;
   bottom: 134px;
-  left: 201px;
+  left: 211px;
 }
 
 .app5 {
   position: relative;
-  bottom: 30px;
-  right: 123px;
+  bottom: 25px;
+  right: 117px;
 }
 
 .app6 {
   position: relative;
-  bottom: 30px;
-  right: 107px;
+  bottom: 25px;
+  right: 102px;
 }
 
 .app7 {
   position: relative;
-  bottom: 30px;
-  right: 91px;
+  bottom: 25px;
+  right: 86px;
 }
 
 .app8 {
   position: relative;
-  bottom: 99px;
-  left: 270px;
+  bottom: 94px;
+  left: 280px;
 }
 
 .app9 {
   position: relative;
   top: 8px;
-  right: 54px;
+  right: 49px;
 }
 
 .app10 {
   position: relative;
   top: 9px;
-  right: 38px;
+  right: 33px;
 }
 
 .app11 {
   position: relative;
   top: 9px;
-  right: 23px;
+  right: 18px;
 }
 
 .app12 {
   position: relative;
   top: 9px;
-  right: 6px;
+  left: 4px;
+}
+
+.app13 {
+  position: relative;
+  left: 20px;
+  top: 40px;
+}
+
+.app14 {
+  position: relative;
+  left: 36px;
+  top: 40px;
+}
+
+.app15 {
+  position: relative;
+  top: 40px;
+  left: 51px;
+}
+
+.app16 {
+  position: relative;
+  top: 40px;
+  left: 73px;
+}
+
+.app17 {
+  position: relative;
+  top: 145px;
+  right: 256px;
+}
+
+.app18 {
+  position: relative;
+  top: 76px;
+  left: 105px;
+}
+
+.app19 {
+  position: relative;
+  top: 76px;
+  left: 120px;
+}
+
+.app20 {
+  position: relative;
+  top: 76px;
+  left: 142px;
 }
 
 /*** TEXT ***/
-/** FACETIME **/
-.app1-text {
+[class$="-text"] {
   font-family: "SFDisplay Regular";
   color: #fff;
   font-size: 15px;
-  position: relative;
-  bottom: 205px;
-  left: 17px;
 }
-
-/** CALENDAR **/
-.app2-text {
-  font-family: "SFDisplay Regular";
-  color: #fff;
-  font-size: 15px;
+.app1-text { /* Facetime */
   position: relative;
-  bottom: 205px;
-  left: 40px;
+  bottom: 325px;
+  right: 185px;
 }
-
-/** PHOTOS **/
-.app3-text {
-  color: #fff;
-  font-family: "SFDisplay Regular";
-  font-size: 15px;
+.app2-text { /* Calendar */
   position: relative;
-  bottom: 205px;
-  left: 70px;
+  bottom: 325px;
+  right: 162px;
 }
-
-/** CAMERA **/
-.app4-text {
-  color: #fff;
-  font-family: "SFDisplay Regular";
-  font-size: 15px;
+.app3-text { /* Photos */
   position: relative;
-  bottom: 205px;
-  left: 104px;
+  bottom: 343px;
+  left: 200px;
 }
-
-/** MAIL **/
-.app5-text {
-  color: #fff;
-  font-family: "SFDisplay Regular";
-  font-size: 15px;
+.app4-text { /* Camera */
   position: relative;
-  bottom: 100px;
-  right: 191px;
+  bottom: 343px;
+  left: 240px;
 }
-
-/** CLOCK **/
-.app6-text {
-  color: #fff;
-  font-family: "SFDisplay Regular";
-  font-size: 15px;
+.app5-text { /* Mail */
   position: relative;
-  bottom: 100px;
-  right: 142px;
+  bottom: 235px;
+  right: 58px;
 }
-
-/** MAPS **/
-.app7-text {
-  color: #fff;
-  font-family: "SFDisplay Regular";
-  font-size: 15px;
+.app6-text { /* Clock */
   position: relative;
-  bottom: 100px;
-  right: 97px;
+  bottom: 235px;
+  right: 9px;
 }
-
-/** WEATHER **/
-.app8-text {
-  color: #fff;
-  font-family: "SFDisplay Regular";
-  font-size: 15px;
+.app7-text { /* Maps */
   position: relative;
-  bottom: 118px;
-  left: 275px;
+  bottom: 235px;
+  left: 37px;
 }
-
-/** REMINDERS **/
-.app9-text {
-  color: #fff;
-  font-family: "SFDisplay Regular";
-  font-size: 15px;
+.app8-text { /* Weather */
   position: relative;
-  bottom: 10px;
-  right: 44px;
+  bottom: 235px;
+  left: 80px;
 }
-
-/** NOTES **/
-.app10-text {
-  color: #fff;
-  font-family: "SFDisplay Regular";
-  font-size: 15px;
+.app9-text { /* Reminders */
+  position: relative;
+  bottom: 133px;
+  right: 243px;
+}
+.app10-text { /* Notes */
   position: relative;
   bottom: 10px;
   right: 14px;
 }
-
-/** STOCKS **/
 .app11-text {
-  color: #fff;
-  font-family: "SFDisplay Regular";
-  font-size: 15px;
   position: relative;
   bottom: 10px;
   left: 25px;
 }
-
-/** BOOKS **/
 .app12-text {
-  color: #fff;
-  font-family: "SFDisplay Regular";
-  font-size: 15px;
+  position: relative;
+  bottom: 15px;
+  right: 10px;
+}
+.app13-text {
   position: relative;
   bottom: 10px;
   left: 68px;
+}
+.app14-text {
+  position: relative;
+}
+.app15-text {
+  position: relative;
 }
 
 /*** INSIDE APPS ***/
@@ -333,6 +354,12 @@ iframe {
 
 .in-clockapp-bg {
   background: url("https://cdn.glitch.com/36a0a6ba-3023-4419-b7c2-f31390a098f8%2Fclockbg.png?v=1620799098761");
+  background-repeat: no-repeat;
+  background-size: 362px 782px;
+}
+
+.in-weatherapp-bg {
+  background: url("https://raw.githubusercontent.com/pemulator/iphone12/main/assets/appbg-black.png");
   background-repeat: no-repeat;
   background-size: 362px 782px;
 }
@@ -403,6 +430,8 @@ iframe {
   color: #DDB53B;
   font-family: "SFDisplay Regular";
   font-size: 25px;
+  position: relative;
+  left: 15px;
 }
 .notes-back a:link {
   color: #DDB53B;
@@ -414,6 +443,10 @@ iframe {
   font-size: 30px;
 }
 
+.notes-writing {
+  position: relative;
+  left: 10px;
+}
 .notes-writing-title {
   display: block;
   width: 95%;
@@ -471,8 +504,8 @@ iframe {
 .mailbox-back {
   font-family: "SFDisplay Light";
   position: relative;
-  font-size: 25px;
-  top: 15px;
+  font-size: 20px;
+  top: 20px;
   left: 15px;
 }
 .mailbox-back a:link {
@@ -486,7 +519,8 @@ iframe {
 }
 
 .mailbox-arrow {
-  font-size: 30px;
+  font-size: 150%;
+  font-weight: bold;
 }
 
 .mail-content {
@@ -552,21 +586,14 @@ a:visited .mail-author, a:visited .mail-title {
   font-size: 30px;
   position: relative;
   left: 15px;
-  top: 20px;
-}
-.wc-clock-difference {
-  font-family: "SFDisplay Light";
-  color: #808080;
-  position: relative;
-  left: 15px;
-  top: 20px;
+  top: 30px;
 }
 .wc-clock-time {
   font-family: "SFDisplay Light";
   color: #fff;
   position: relative;
-  left: 200px;
-  bottom: 35px;
+  left: 230px;
+  bottom: 20px;
   font-size: 50px;
 }
 .wc-clock-period {
